@@ -2,7 +2,7 @@
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open chrome using following command 'chrome.exe --disable-site-isolation-trials --disable-web-security --user-data-dir="D:\temp"'
+Runs the app in the development mode.
+following command is open chrome with disable CORS security 'chrome.exe --disable-site-isolation-trials --disable-web-security --user-data-dir="D:\temp"'
 
-[http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open applications in chrome using [http://localhost:3000].
