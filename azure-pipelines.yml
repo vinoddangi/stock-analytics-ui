@@ -22,10 +22,10 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        ConnectionType: 'AzureRM'
-        azureSubscription: 'Free Trial (8c9c0e53-92da-4406-b247-6e2b7aa797a2)'
-        appType: 'webApp'
-        WebAppName: 'vinoddangi-test1'
-        packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Free Trial (8c9c0e53-92da-4406-b247-6e2b7aa797a2)'
+    appType: 'webApp'
+    WebAppName: 'vinoddangi-test1'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/*.zip'
